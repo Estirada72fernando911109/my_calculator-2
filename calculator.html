@@ -10,6 +10,10 @@ function sinx(){
 var num = document.getElementById("n3");
 num.value = Math.sin(num.value);
 }
+function cuadrado(){
+var num=document.getElementById("n2");
+num.value = Math.pow(num.value, 4);
+}
 </script>
 </head>
 <body>
@@ -22,7 +26,12 @@ Number:
 Number:
 <input type="text" id="n3">
 <p>
-<button onclick="sinx()">sin</button>
+<button onclick="sinx()">sin(x)</button>
+</p>
+<input type="text" id="n2">
+<p>
+<button onclick="cuadrado()"> x^4 </button>
+</p>
 </body>
 </html>
 =================================================
